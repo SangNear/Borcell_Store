@@ -64,7 +64,7 @@ const Navbar = () => {
                     <SheetContent>
                         <div className='w-full h-full flex flex-col justify-baseline gap-3'>
                             {navLinks.map((navLink) => (
-                                <Link href={navLink.route} className='text-lg font-medium p-4 hover:text-blue-500' >{navLink.label}</Link>
+                                <Link href={navLink.route} key={navLink.route} className='text-lg font-medium p-4 hover:text-blue-500' >{navLink.label}</Link>
                             ))}
                         </div>
 
